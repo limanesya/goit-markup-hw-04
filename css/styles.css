@@ -268,8 +268,16 @@ display: flex;
 }
 
 /* Footer */
+.xxx {
+    display: flex;
+}
 .social-list {
     display: flex;
+}
+.media {
+    color: var(--background-color);
+    font-weight: 500px;
+    margin-bottom: 16px;
 }
 .social-media {
     outline: solid tomato;
@@ -277,9 +285,6 @@ display: flex;
     width: 40px;
     height: 40px;
     background-color: var(--accent-color);
-}
-.social-item {
-    background-color: #4D5AE5;
 }
 .social-media-icon {
     width: 24px;
@@ -303,6 +308,7 @@ display: flex;
 .footer-logo {
     display: inline-block;
     margin-bottom: 16px;
+    margin-right: 269px;
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
         font-weight: 800;
