@@ -379,8 +379,7 @@ cursor: pointer;
     
 }
 .social-media:hover,
-.social-media:focus,
-.social-media:active {
+.social-media:focus {
     background-color: var(--ocean-color);
 }
 .social-media-item {
