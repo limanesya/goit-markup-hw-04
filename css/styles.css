@@ -34,6 +34,9 @@ h1, h2, h3, h4, h5, h6, p {
 /* header */
 .header {
     border-bottom: 1px solid var(--header-border-color);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .nav-container {
     display: flex;
@@ -104,23 +107,20 @@ color: var(--ocean-color);
 /* hero */
 .hero {
     text-align: center;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        background-size: cover;
+        background-position: center;
+        max-width: 1440px;
+        height: 600px;
+        background-repeat: no-repeat;
+        background-color: #2E2F42;
+        margin-left: auto;
+        margin-right: auto;
     
 }
 .overlay {
-    
-    background-image:
-    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-office.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 600px;
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 188px;
     padding-bottom: 188px;
-    background-repeat: no-repeat;
-    background-color: #2E2F42;
 }
 
 .hero-title {
@@ -177,15 +177,14 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     gap: 24px;
 }
 .aboutus-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 264px;
     height: 112px;
     background-color: var(--secondary-white-color);
     margin-bottom: 8px;
     border-radius: 4px;
-}
-.aboutus-icon {
-    width: 64px;
-    height: 64px;
 }
 
 info-item {
@@ -277,18 +276,18 @@ display: flex;
 .team-container {
     padding-top: 32px;
     padding-bottom: 32px;
-    padding-left: 16px;
-    padding-right: 16px;
 }
 /* Customers */
-.customers {
+.customers-list {
     display: flex;
+    gap: 24px;
 }
-.customers-container {
+.customers {
     padding-top: 120px;
     padding-bottom: 120px;
 }
 .customers-title {
+    line-height: 1.1;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 72px;
@@ -296,19 +295,27 @@ display: flex;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
-    letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--title-text-color);
 }
+.customers-item {
+    width: calc((100% - 120px) / 6);
+    height: 88px;
+}
 .customers-link {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #8E8F99;
     border-radius: 4px;
-    width: 168px;
-    height: 88px;
-    margin-right: 24px;
+    width: 100%;
+    height: 100%;
     color: var(--customers-link-color);
-    
+}
+.customers-link:hover,
+.customers-link:focus {
+    border-color: var(--ocean-color);
+    color: var(--ocean-color);
 }
 .last {
     margin-right: 0;
@@ -323,30 +330,42 @@ display: flex;
 .footer-container {
     display: flex;
     align-items: baseline;
+    gap: 120px;
 }
 .social-list {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .media {
     color: var(--background-color);
     font-weight: 500px;
-    margin-bottom: 16px;
     
 }
+.footer-social-list {
+    gap: 16px;
+}
 .social-media {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--accent-color);
     color: var(--secondary-white-color);
     border-radius: 50%;
-    margin-right: 16px;
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
     
 }
+.social-media:hover,
+.social-media:focus {
+    background-color: var(--ocean-color);
+}
+.social-media-item {
+    width: 40px;
+    height: 40px;
+}
 .social-media-icon {
-    width: 24px;
-    height: 24px;
     fill: currentColor;
 } 
 .footnote {
@@ -437,6 +456,15 @@ display: flex;
     align-items: center;
     row-gap: 48px;
     column-gap: 24px;
+}
+.portfolio-link {
+    display: block;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .flex-container {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
