@@ -8,6 +8,7 @@
     --ocean-color: #404BBF;
 --header-border-color: #e7e9fc;
 --customers-link-color: #8E8F99; 
+--footer-hover-color:#31d0aa;
 
 }
 body {
@@ -330,21 +331,31 @@ display: flex;
 .footer-container {
     display: flex;
     align-items: baseline;
-    gap: 120px;
+}
+.primary {
+    margin-right: 120px;
 }
 .social-list {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 24px;
 }
 .media {
     color: var(--background-color);
     font-weight: 500px;
+    margin-bottom: 16px;
     
 }
 .footer-social-list {
     gap: 16px;
+    display: flex;
 }
+.footer-social-media:hover,
+.footer-social-media:focus {
+    background-color: var(--footer-hover-color);
+}
+
 .social-media {
     display: flex;
     align-items: center;
