@@ -313,20 +313,28 @@ display: flex;
     height: 100%;
     color: var(--customers-link-color);
 }
+
 .customers-link:hover,
 .customers-link:focus {
     border-color: var(--ocean-color);
-    color: var(--ocean-color);
 }
+
+.customers-icon:hover,
+.customers-icon:focus {
+    fill: var(--ocean-color);
+}
+
 .last {
     margin-right: 0;
 }
 
 .customers-icon {
+    fill: currentColor;
     height: 56px;
     width: 104px;
-    fill: currentColor;
 }
+
+
 /* Footer */
 .footer-container {
     display: flex;
